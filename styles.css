@@ -19,13 +19,12 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* overflow: hidden; */
 }
 
 video {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+
 }
 
 header {
@@ -89,8 +88,13 @@ nav ul li a.cta {
     color: #e3c567;
     padding: 10px
 }
-.carousel-item{
+/* .carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     height: 70px;
     border-block-start-width: 100px;
     margin: 20% 
-}
+    
+} */
