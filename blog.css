@@ -1,0 +1,42 @@
+.post-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(199, 28, 28, 0.2);
+  }
+  
+  .post-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgb(255, 0, 0);
+    background-color: #120e0e;
+  }
+  
+  .post-card img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .post-card img:hover {
+    transform: scale(1.1);
+  }
+  
+  .post-card .post-info {
+    background-color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-card .post-info:hover {
+    background-color: #ab4444;
+  }
+  
+  .post-card .post-info h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .post-card .post-info p {
+    font-size: 1em;
+    color: #555;
+  }
