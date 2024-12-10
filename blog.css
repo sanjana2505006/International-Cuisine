@@ -1,26 +1,83 @@
 body {
-  background-color: rgba(0, 0, 0, 0.62);
+  background-color: rgba(243, 237, 237, 0.62);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+header {
+  background-color: #333;
+  padding: 15px 20px;
+  color: white;
+}
 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f0db23;
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #f0db23;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
 .post-card {
-  display: inline-block;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 300px;
-  margin: 20px;
+  margin: 10px;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(199, 28, 28, 0.2);
+  border-radius: 10px;
 }
 
 .post-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgb(255, 0, 0);
-  background-color: #995c1c;
+  box-shadow: 0 6px 12px rgb(51, 53, 51);
+  background-color: #f0db23;
 }
 
 .post-card img {
   width: 100%;
-
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -28,22 +85,28 @@ body {
   transform: scale(1.1);
 }
 
-.post-card .post-info {
-  background-color: #fff;
-  padding: 10px;
-  transition: background-color 0.3s ease;
+.post-card h3 {
+  font-size: 1.2em;
+  margin: 15px 0 10px;
+  color: #333;
 }
 
-.post-card .post-info:hover {
-  background-color: #ab4444;
-}
-
-.post-card .post-info h3 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-}
-
-.post-card .post-info p {
+.post-card p {
   font-size: 1em;
   color: #b46329;
+  padding: 0 10px 15px;
 }
+
+.post-card img {
+  width: 100%;
+
+  max-height: 150px;
+
+  object-fit: cover;
+
+  border-top-left-radius: 10px;
+
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
